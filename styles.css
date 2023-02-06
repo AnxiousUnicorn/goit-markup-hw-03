@@ -20,6 +20,11 @@
   margin: auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .header-bar {
   display: flex;
   justify-content: space-evenly;
