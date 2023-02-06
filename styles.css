@@ -7,11 +7,15 @@
   --background-header-color: #2f303a;
   --title-white: white;
   --title-black: black;
+  --border-color: #eeeeee;
+}
+
+.body {
+  background-color: var(--background-primary-color);
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
-  background-color: var(--background-primary-color);
-  font-family: "Roboto", sans-serif;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -26,6 +30,8 @@
   display: inline-flex;
   min-width: 254px;
   justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .name {
@@ -171,7 +177,7 @@
 
 .team-list-item {
   max-width: 270px;
-  border-color: var(--background-header-color);
+  border-color: var(--border-color);
   border-width: 1px;
   border-style: solid;
 }
@@ -205,6 +211,13 @@
   display: block;
 }
 
+.portfolio-buttons {
+  display: inline-flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 8px;
+}
+
 .categories {
   background-color: var(--background-secondary-color);
   color: var(--text-primary-color);
@@ -227,12 +240,32 @@
   color: var(--title-white);
 }
 
+.projects {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-basis: calc((100% - 60px) / 3);
+  padding: 0;
+}
+
+.project-item {
+  border-color: var(--border-color);
+  border-style: solid;
+  border-width: 1px;
+  max-width: 370px;
+  flex-basis: auto;
+}
+
 .project-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2.25;
   letter-spacing: 0.06em;
   color: var(--text-primary-color);
+  display: block;
+  margin-left: 24px;
+  margin-top: 20px;
 }
 
 .project-category {
@@ -240,6 +273,9 @@
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--text-secondary-color);
+  display: block;
+  margin-left: 24px;
+  margin-bottom: 20px;
 }
 
 .footer {
