@@ -17,13 +17,16 @@
 
 .container {
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 .header-bar {
-  display: block;
-  justify-content: space-between;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ececec;
 }
 
 .navbar {
@@ -212,10 +215,11 @@
 }
 
 .portfolio-buttons {
-  display: inline-flex;
+  display: flex;
   list-style: none;
-  justify-content: space-between;
+  justify-content: center;
   gap: 8px;
+  align-items: center;
 }
 
 .categories {
@@ -250,9 +254,9 @@
 }
 
 .project-item {
-  border-color: var(--border-color);
-  border-style: solid;
-  border-width: 1px;
+  border-bottom-color: var(--border-color);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
   max-width: 370px;
   flex-basis: auto;
 }
@@ -281,6 +285,10 @@
 .footer {
   background-color: var(--background-header-color);
   height: 252px;
+}
+
+.footer-box {
+  padding-left: 60px;
 }
 
 .footer-name-first {
