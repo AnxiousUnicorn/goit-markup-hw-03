@@ -188,6 +188,7 @@
   border-color: var(--border-color);
   border-width: 1px;
   border-style: solid;
+  background-color: white;
 }
 
 .team-title {
