@@ -9,9 +9,23 @@
   --title-black: black;
 }
 
-.body {
+.container {
   background-color: var(--background-primary-color);
   font-family: "Roboto", sans-serif;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-bar {
+  display: block;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: inline-flex;
+  min-width: 254px;
+  justify-content: space-between;
 }
 
 .name {
@@ -25,6 +39,7 @@
 .name-first {
   color: var(--main-color);
 }
+
 .name-second {
   color: var(--title-black);
 }
@@ -40,6 +55,12 @@
 
 .navigation:hover {
   color: var(--main-color);
+}
+
+.contact-box {
+  justify-content: space-between;
+  display: inline-flex;
+  width: 275px;
 }
 
 .contact {
@@ -64,6 +85,8 @@
   text-align: center;
   height: 600px;
   color: var(--title-white);
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .header-text {
@@ -91,6 +114,18 @@
   color: var(--title-black);
 }
 
+.solutions-box {
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 1170px;
+}
+
+.solution {
+  width: 270px;
+  align-items: center;
+}
+
 .solutions-title {
   font-weight: 700;
   font-size: 14px;
@@ -107,6 +142,13 @@
   color: var(--text-secondary-color);
 }
 
+.whatwedo {
+  list-style: none;
+  width: 1170px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
 .whatwedo-title {
   font-weight: 700;
   font-size: 36px;
@@ -120,6 +162,20 @@
   background-color: var(--background-secondary-color);
 }
 
+.team-list {
+  list-style: none;
+  display: inline-flex;
+  width: 1170px;
+  justify-content: space-between;
+}
+
+.team-list-item {
+  max-width: 270px;
+  border-color: var(--background-header-color);
+  border-width: 1px;
+  border-style: solid;
+}
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -127,6 +183,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-primary-color);
+  display: block;
 }
 
 .team-name {
@@ -136,6 +193,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-primary-color);
+  display: block;
 }
 
 .team-position {
@@ -144,6 +202,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-secondary-color);
+  display: block;
 }
 
 .categories {
@@ -212,6 +271,7 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--title-white);
+  display: block;
 }
 
 .footer-contact {
@@ -220,6 +280,7 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  display: block;
 }
 
 .footer-contact:hover {
